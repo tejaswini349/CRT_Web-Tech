@@ -1,0 +1,78 @@
+
+<style>
+    body{
+        text-align: center;
+        font-family: Arial, sans-serif;
+        background-color: aliceblue;
+        margin: 50px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    img{
+        width: 200px;
+        border-radius: 10px;
+        box-shadow: 0 4px,10px rgba(red, green, blue, alpha);
+        transition: transform 0.5s ease-in-out;
+    }
+    .float:hover{
+        transform:rotatex(180deg);
+    }
+    .flip:hover{
+        transform: rotatey(180deg);
+    }
+    .blur{
+        filter:blur(5px);
+    }
+    .blur:hover{
+        filter: blur(0);
+    }
+    .pulse{
+        animation:pulse 0.8s infinite alternate ;
+    }
+    @keyframes pulse{
+        0%{transform:scale(1);opacity: 1;}
+        100%{transform:scale(1.1);opacity: 0.8;}
+    }
+    .shake:hover{
+        animation: shake 0.3s infinite;
+    }
+    @keyframes shake{
+        0% {transform:translateX(0);}
+    }
+    .spin:hover{
+        transform: rotate(360edg);
+    }
+    .tilt.hover{
+        transform: skew(180deg);
+    }
+</style> 
+    <div class="container">
+        <div>
+            <h2>floating effect</h2>
+            <img src="https://i.pinimg.com/736x/60/97/23/6097239d56f9a0a872fafca5afa7162a.jpg" alt="float image" class="float">
+        </div>
+        <div>
+            <h2>flipping effect</h2>
+            <img src=https://i.pinimg.com/736x/60/97/23/6097239d56f9a0a872fafca5afa7162a.jpg alt="flip image" class="flip">
+        </div>
+        <div>
+            <h2>blur to focus effect</h2>
+            <img src=https://i.pinimg.com/736x/60/97/23/6097239d56f9a0a872fafca5afa7162a.jpg alt="blur image" class="pulse">
+        </div>
+        <div>
+            <h2>shaking effect</h2>
+            <img src=https://i.pinimg.com/736x/60/97/23/6097239d56f9a0a872fafca5afa7162a.jpg alt="shake image" class="shake">
+        </div>
+        <h2> Spin effect</h2>
+        <img src=https://i.pinimg.com/736x/60/97/23/6097239d56f9a0a872fafca5afa7162a.jpg alt="spin image" class="spin">
+        </div>
+        <div>
+            <h2>skew effect</h2>
+            <img src=https://i.pinimg.com/736x/60/97/23/6097239d56f9a0a872fafca5afa7162a.jpg alt="tilt image" class="tilt">
+        </div>
+    </div>
+</body>    
